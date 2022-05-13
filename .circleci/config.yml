@@ -13,17 +13,15 @@ jobs:
       - aws-cli/setup
       - checkout
       - eb/setup
-  frontend:
-    steps:
       - run:
-        name: Install front-end dependencies
-        command: |
-          npm run frontend:install
+          name: Install front-end dependencies
+          command: |
+            npm run frontend:install
       - run:
-        name: Building front-end
-        command: |
-          npm run frontend:build
+          name: Building front-end
+          command: |
+            npm run frontend:build
       - run:
-        name: deploying frontend
-        command: |
-          npm run frontend:deploy
+          name: deploying frontend
+          command: |
+            npm run frontend:deploy
