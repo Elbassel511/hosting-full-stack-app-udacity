@@ -12,19 +12,6 @@ jobs:
       - checkout
       - aws-cli/setup
       - aws-elastic-beanstalk/setup
-      # frontend deploy
-      - run:
-          name: Install front-end dependencies
-          command: |
-            npm run frontend:install
-      - run:
-          name: Building front-end
-          command: |
-            npm run frontend:build
-      - run:
-          name: deploying frontend
-          command: |
-            npm run frontend:deploy
       #api deploy
       - run:
           name: Install API dependencies
@@ -38,3 +25,16 @@ jobs:
           name: deploy API
           command: |
             npm run api:deploy
+      # frontend deploy
+      - run:
+          name: Install front-end dependencies
+          command: |
+            npm run frontend:install
+      - run:
+          name: Building front-end
+          command: |
+            npm run frontend:build
+      - run:
+          name: deploying frontend
+          command: |
+            npm run frontend:deploy
