@@ -12,5 +12,6 @@ eb setenv |
     POSTGRES_HOST=POSTGRES_HOST |
     POSTGRES_PASSWORD=$POSTGRES_PASSWORD |
     POSTGRES_USERNAME=$POSTGRES_USERNAME |
-    URL=$URL
+    URL=$URL |
+    -e Udagram
 eb deploy Udagram
