@@ -5,7 +5,7 @@ import { config } from "./config/config";
 
 console.log(config.aws_media_bucket, config.aws_region);
 
-AWS.config = new AWS.config({
+AWS.config = new AWS.Config({
   accessKeyId: config.aws_access_key,
   secretAccessKey: config.aws_secret_access_key,
   region: config.aws_region,
