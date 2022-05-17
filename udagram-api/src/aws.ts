@@ -3,8 +3,6 @@ import { config } from "./config/config";
 
 //Credentials are auto set according to the documentation https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html and the default profile is "Default anyway"
 
-console.log(config.aws_media_bucket, config.aws_region);
-
 AWS.config = new AWS.Config({
   accessKeyId: config.aws_access_key,
   secretAccessKey: config.aws_secret_access_key,
@@ -26,7 +24,6 @@ export function getGetSignedUrl(key: string): string {
     Key: key,
     Expires: signedUrlExpireSeconds,
   });
-  console.log(signedUrl);
   return signedUrl;
 }
 
@@ -38,7 +35,6 @@ export function getPutSignedUrl(key: string): string {
     Key: key,
     Expires: signedUrlExpireSeconds,
   });
-  console.log(signedUrl);
 
   return signedUrl;
 }
