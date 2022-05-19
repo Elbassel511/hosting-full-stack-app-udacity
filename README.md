@@ -37,7 +37,7 @@ live url : <http://bucket-udagram.s3-website-us-east-1.amazonaws.com>
 
 ## build status
 
-[![CircleCI](https://circleci.com/gh/Elbassel511/hosting-full-stack-app-udacity/tree/master.svg?style=svg)](https://circleci.com/gh/Elbassel511/hosting-full-stack-app-udacity/tree/master)
+![CircleCI](https://circleci.com/gh/Elbassel511/hosting-full-stack-app-udacity/tree/master.svg?style=svg)
 
 ## Built With
 
