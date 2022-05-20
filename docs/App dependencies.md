@@ -9,4 +9,5 @@
 - [Aws cli](https://aws.amazon.com/cli/)
 - [postgres database](https://www.postgresql.org/)
 - [eb cli](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html)
+- [RDS postgres database](https://aws.amazon.com/rds/)
 - [ionic](https://ionicframework.com/)
